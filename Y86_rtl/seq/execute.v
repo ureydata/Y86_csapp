@@ -10,7 +10,7 @@ module execute(
     valE_o,
     Cnd_o
     );
-    //输入信号定义
+    //input signal
     input               clk_i;
     input               rst_n_i;
     input   wire[3:0]   icode_i;
@@ -19,12 +19,12 @@ module execute(
     input   wire signed [63:0] valB_i;
     input   wire signed [63:0] valC_i;
 
-    //输出信号定义
+    //output signal
     output   reg signed [63:0] valE_o;
     output   wire              Cnd_o;
 
 
-    //中间信号定义
+    //intermediate signal
     reg     [63:0]      aluA;
     reg     [63:0]      aluB;
     reg     [3:0]       alu_fun;
